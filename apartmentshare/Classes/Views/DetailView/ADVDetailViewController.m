@@ -29,7 +29,7 @@
 {
     [super viewDidLoad];
     
-    self.title = @"Set Title here";
+    self.title = [self.apartment valueForKey:@"location"];
     
     CAGradientLayer *l = [CAGradientLayer layer];
     l.frame = self.shadowView.bounds;
